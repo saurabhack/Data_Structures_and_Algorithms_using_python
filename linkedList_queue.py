@@ -51,6 +51,7 @@ class Queue:
     def delete(self):
         self.linkedList.head=None
         self.linkedList.tail=None
+    
 custom_queue=Queue()
 custom_queue.enqueue(1)        
 custom_queue.enqueue(2)        
