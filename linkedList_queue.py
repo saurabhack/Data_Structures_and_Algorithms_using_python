@@ -36,7 +36,7 @@ class Queue:
             self.linkedList.tail.next=newNode
             self.linkedList.tail=newNode
     def dequeue(self):
-        if self.isEmpty():
+        if self.isEmpty():  
             return "Queue is already empty !"
         else:
             tempNode=self.linkedList.head
