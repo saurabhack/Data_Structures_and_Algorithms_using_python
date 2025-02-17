@@ -32,14 +32,14 @@ class linkedList:
                 current=current.next
             print("NULL")
     def reverseLinkedLists(self):
+        prev=None
         current=self.head
-        temp=Node(-1)
-        first=Node(None)
-        nextNode=current.next
-        lastNode=self.tailNode()
-        lastNode.next=temp
-        first.next=current
-        print(first)
+        while current!=None:
+            next=current.next
+            current.next=prev
+            prev=current
+            current=next
+        self.head=prev
     def removeCycle(self):
         slow=self.head
         fast=slow.next
@@ -52,6 +52,5 @@ ll.push(1)
 ll.push(2)               
 ll.printLinkedLists() 
 ll.reverseLinkedLists()
-ll.printLinkedLists()
-ll.reverseLinkedLists()
+print("reversed linkedlists")
 ll.printLinkedLists()
