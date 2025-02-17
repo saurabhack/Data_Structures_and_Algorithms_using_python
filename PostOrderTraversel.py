@@ -3,7 +3,6 @@ class TreeNode:
         self.data=data
         self.leftChild=None
         self.rightChild=None
-
 root=TreeNode(1)
 even=TreeNode(2)
 odd=TreeNode(3)
@@ -17,7 +16,6 @@ even.leftChild=even1
 even.rightChild=even2
 odd.leftChild=odd1
 odd.rightChild=odd2
-
 def postOrderTraversal(node):
     if not node:
         return
