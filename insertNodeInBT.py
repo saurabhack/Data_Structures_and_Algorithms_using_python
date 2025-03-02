@@ -38,6 +38,6 @@ def insertNode(rootNode,newNode):
             else:
                 root.value.rightChild=newNode
                 return "Successfully inserted"
-newNode=treeNode('development')
+newNode=treeNode('development') 
 print(insertNode(firstNode,newNode))
 levelOrderTraversal(firstNode)
